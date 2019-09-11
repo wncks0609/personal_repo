@@ -7,8 +7,8 @@
     <link rel="stylesheet" href = "styles.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:Bold" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Merriweather: Regular, Italic, Bold" rel="stylesheet">
-    <script src="JsScript.js"></script>
-    <script src="jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="JsScript.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <title>Intership Sign up Form</title>
 </head>
 <body>
@@ -17,7 +17,7 @@
         <hr id = "headerLine">
         <p>Prepare for your career with a Project Management, Web-Develpoment, Graphic design, or Digital Marketing intership at Nothern.</p>
         <p id="error"></p>
-        <input id="email" placeholder="Your Email Address*"></input>
+        <input type="text" id="email" placeholder="Your Email Address*"></input>
         <form >
             <input list="browsers" id="interest" placeholder="Your Interest" >
             <datalist id="browsers">
@@ -29,7 +29,7 @@
               <option value="Software Developement">
             </datalist> 
           </form>
-        <button id ="signUp" onclick="submit()">Sign Up Now</button>    
+        <button id ="submit" onclick="submit()">Sign Up Now</button>    
     </div>
     
 </body>

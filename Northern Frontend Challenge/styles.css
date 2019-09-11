@@ -64,4 +64,18 @@
         border-radius: 10px;
     }
 
+    #error {
+        font-family: 'Merryweather', Regular;
+        font-size: 12px;
+        padding-bottom: 0px;
+        margin-bottom: 1px;
+        margin-left: 310px;
+    }
+
+    #thankYou {
+        font-family: 'Montserrat';
+        font-size: 35px;
+
+    }
+
 }
