@@ -4,15 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href = "styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:Bold" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather: Regular, Italic, Bold" rel="stylesheet">
+    <script src="JsScript.js"></script>
+    <script src="jquery-3.4.1.min.js"></script>
     <title>Intership Sign up Form</title>
 </head>
 <body>
-    <h2>INTERNSHIP SIGNUP FORM</h2>
-    <hr id = "headerLine">
-    <input id="emailFront" cols="30" rows="10" placeholder="Your Email Address*"></input>
-    <input id="emailBack" cols="30" rows="10" placeholder="Your Interest"></input>
-
-    <button id ="signUp">Sign Up Now</button>
-
+    <div id="container">
+        <h2>INTERNSHIP SIGNUP FORM</h2>
+        <hr id = "headerLine">
+        <p>Prepare for your career with a Project Management, Web-Develpoment, Graphic design, or Digital Marketing intership at Nothern.</p>
+        <p id="error"></p>
+        <input id="email" placeholder="Your Email Address*"></input>
+        <form >
+            <input list="browsers" id="interest" placeholder="Your Interest" >
+            <datalist id="browsers">
+              <option value="System Developement">
+              <option value="Project Management">
+              <option value="Web-Development">
+              <option value="Graphic design">
+              <option value="Digital Marketing">
+              <option value="Software Developement">
+            </datalist> 
+          </form>
+        <button id ="signUp" onclick="submit()">Sign Up Now</button>    
+    </div>
+    
 </body>
 </html>
